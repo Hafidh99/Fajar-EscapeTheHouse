@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Draggable : MonoBehaviour
+public class Draggable : MonoBehaviour, IDragHandler
 {
-    Vector2 difference = Vector2.zero;
-
-    private void OnMouseDown()
+    public void OnDrag(PointerEventData eventData)
     {
-        difference = (Vector2)Camera.current.ScreenToWorldPoint(Input.mousePosition) - (Vector2) transform.position;
-    }
-
-    private void OnMouseDrag()
-    {
-        transform.position = (Vector2)Camera.current.ScreenToWorldPoint(Input.mousePosition) - difference;
+        transform.position = Input.mousePosition;
     }
 }
