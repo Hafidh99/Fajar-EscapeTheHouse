@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Lantai 1.unity
     guid: 6b99ba51d0c16d04596c147e9e44a5a3
   - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: ab415f4fee403d345bcc664dd59779b1
+  - enabled: 1
+    path: Assets/Scenes/Lantai 2.unity
+    guid: 5c6bdf6f2a934824b947b086bbda1666
+  - enabled: 1
     path: Assets/Scenes/Epilog.unity
     guid: bb2d159c1fec4e041ab25bd77b944bab
   m_configObjects: {}
